@@ -1,0 +1,442 @@
+/* General Styles for About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: black; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+}
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between image and content */
+    max-width: 1800px;
+    width: 100%;
+}
+
+.about-image img {
+    max-width: 300px; /* Set a reasonable max-width for the image */
+    width: 100%; /* Make image responsive */
+    border-radius: 10px; /* Add some rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+}
+
+.about-content {
+    max-width: 800px; /* Limit text width for readability */
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #fff; /* Darker text color */
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #f4f4f4; /* Slightly muted color for the text */
+    line-height: 1.6;
+}
+
+/* Responsive Styles for Tablets and Mobile */
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column-reverse; /* Display image below text */
+        text-align: center; /* Center the text and image */
+    }
+
+    .about-image img {
+        max-width: 250px; /* Slightly smaller image on tablets */
+    }
+
+    .about-content {
+        max-width: 100%; /* Make text fill the available width */
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-wrapper {
+        gap: 20px; /* Reduce gap between image and text */
+        flex-direction: column-reverse; /* Keep image below text */
+    }
+
+    .about-image img {
+        max-width: 200px; /* Smaller image on mobile */
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+
+.skills-section {
+    padding: 40px 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #fff;
+    border: 2px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.skill-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: none;
+}
+
+.skill-item:hover p {
+    opacity: 1;
+    display: block;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .skill-item {
+        padding: 15px;
+    }
+
+    .skills-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 20px 10px;
+    }
+
+    .skill-item {
+        padding: 10px;
+    }
+
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skills-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .skill-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Default Styles */
+#p2 {
+    font-size: 2.5rem; /* Make the font size larger */
+    font-weight: 700;  /* Make the text bold */
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Add space below the heading */
+    color: white; /* Optional: Change the color */
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: black;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+}
+
+.project-card h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    margin: 10px 0;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Project Image */
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive for 1024px */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-btn {
+        padding: 12px 24px;
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive for 480px */
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .project-card {
+        padding: 10px;
+    }
+
+    .project-btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive for 390px */
+@media (max-width: 390px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 10px;
+    }
+
+    .project-card {
+        padding: 8px;
+    }
+
+    .project-btn {
+        padding: 6px 14px;
+        font-size: 0.75rem;
+    }
+}
+
+/* General Contact Section Styling */
+#contact {
+    padding: 40px 20px;
+    background-color: black;
+    text-align: center;
+}
+
+#p2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#contact p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Interactive Enhancements */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    font-style: italic;
+    color: #aaa;
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #p2 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #p2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    #p2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 390px) {
+    #p2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+    }
+}
+/* Media Queries for 580px */
