@@ -502,6 +502,49 @@ input:focus, textarea:focus {
         padding: 30px 15px;
     }
 }
+@media (max-width: 350px) {
+    .hero {
+        font-size: 1rem; /* Slightly smaller font size */
+        padding: 25px 10px; /* Reduced padding */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font size for navigation */
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img {
+        max-width: 120px; /* Reduced image width */
+    }
+
+    .animated-text {
+        font-size: 1rem; /* Slightly smaller font size */
+        min-width: 100%;
+    }
+
+    .side-button {
+        left: 320px; /* Adjust left position */
+    }
+
+    .cta-button {
+        font-size: 0.7rem; /* Smaller font size for button */
+        padding: 5px 8px; /* Reduced padding */
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 0 8px; /* Slightly smaller padding */
+    }
+
+    section {
+        padding: 25px 10px; /* Reduced padding for sections */
+    }
+}
+
 
 /* Footer Styles */
 footer {
